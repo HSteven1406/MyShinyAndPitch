@@ -1,0 +1,48 @@
+---
+title: "Reproducible Pitch Presentation"
+author: "Steven Hanssens"
+date: "20/06/2021"
+output: slidy_presentation
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+source('~/MyShinyAndPitch/MyScript.R')
+library(shiny)
+```
+
+## 2020 Car crash data in Belgium
+
+Our application uses data about car crashs in Belgium during the year 2020. These data are available [here](https://statbel.fgov.be/fr/open-data/accidents-de-la-circulation-2020). The application provides visualization about car accidents in Belgium in 2020.
+
+
+You can find it, on ShinyApps.io, [here](http://hsteven1406.shinyapps.io/RoadAccident) and its repository, on Github, [there](https://github.com/HSteven1406/MyShinyAndPitch).
+
+## Variables used
+In the next slide, we will show our cleaned dataset. But, first, let me explain the variables used : 
+
+- Region = Regions in Belgium
+- Prov = Provinces in Belgium
+- ACCT = number of accidents
+- DEAD = number of accidents causing immediate deaths
+- DEAD_30_DAYS = number of accidents causing deaths within 30 days
+- MORTALLY_INJ = number of accidents causing mortally injuries
+- SERLY_INJ = number of accidents causing serious injuries
+- SLY_INJ = number of accidents causing minor injuries
+
+
+## Exploratory Analysis
+
+After cleaning, here is the data used for my application
+
+```{r}
+SumData
+```
+
+ 
+## The App
+```{r, echo=FALSE}
+shinyAppDir("~/MyShinyAndPitch/RoadAccident")
+```
+

@@ -1,0 +1,14 @@
+name: RoadAccident
+title: RoadAccident
+username:
+account: hsteven1406
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4293215
+bundleId: 4734783
+url: https://hsteven1406.shinyapps.io/RoadAccident/
+when: 1624140229.13031
+lastSyncTime: 1624140229.13031
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Data/Data.xlsx|Data/Var.xlsx|MyScript.R|Test.R
